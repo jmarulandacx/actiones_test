@@ -14,6 +14,30 @@ jobs:
       run: pwd 
     - name: Imprimir archivos actual
       run: ls -la
+    - name: Imprimir directorio actual
+      run: cd .. 
+    - name: Imprimir archivos actual
+      run: ls -la
+    - name: Imprimir directorio actual
+      run: cd .. 
+    - name: Imprimir archivos actual
+      run: ls -la
+    - name: Imprimir directorio actual
+      run: cd .. 
+    - name: Imprimir archivos actual
+      run: ls -la
+    - name: Imprimir directorio actual
+      run: cd .. 
+    - name: Imprimir archivos actual
+      run: ls -la
+    - name: Imprimir directorio actual
+      run: cd .. 
+    - name: Imprimir archivos actual
+      run: ls -la
+    - name: Imprimir directorio actual
+      run: cd .. 
+    - name: Imprimir archivos actual
+      run: ls -la
     - name: Encontrar el script
       run: find . -name "importar_request.py" 
       
