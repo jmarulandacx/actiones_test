@@ -14,7 +14,9 @@ jobs:
       run: pwd 
     - name: Imprimir archivos actual
       run: ls -la
-    
+    - name: Encontrar el script
+      run: find . -name "importar_request.py" 
+      
     - name: Checkout del código
       uses: actions/checkout@v2
 
