@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Imprimir directorio actual
+      run: pwd 
+    
     - name: Checkout del código
       uses: actions/checkout@v2
 
