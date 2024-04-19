@@ -1,0 +1,31 @@
+name: Ejecutar Script y Traer XLSX
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v2
+
+    - name: Configurar Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'  # Cambia esto a la versión de Python que necesites
+
+    - name: Instalar dependencias
+      run: pip install requests   # Instala las bibliotecas necesarias
+
+    - name: Ejecutar Script
+      run: python tu_script.py  # Ejecuta tu script Python que realiza la solicitud y crea el archivo XLSX
+
+    - name: Traer TXT
+      uses: actions/upload-artifact@v2
+      with:
+        name: archivo-xlsx
+        path: archivo.txt  # Ajusta la ruta al archivo XLSX generado por tu script
