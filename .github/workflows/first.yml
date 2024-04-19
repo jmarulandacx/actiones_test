@@ -29,7 +29,7 @@ jobs:
       run: pip install requests   # Instala las bibliotecas necesarias
 
     - name: Ejecutar Script
-      run: python .github/workflows/importar_requests.py  # Ejecuta tu script Python que realiza la solicitud y crea el archivo XLSX
+      run: python .github/workflows/import_requests.py  # Ejecuta tu script Python que realiza la solicitud y crea el archivo XLSX
 
     - name: Traer TXT
       uses: actions/upload-artifact@v2
