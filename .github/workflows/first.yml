@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Imprimir directorio actual
       run: pwd 
+    - name: Imprimir archivos actual
+      run: ls -la
     
     - name: Checkout del código
       uses: actions/checkout@v2
